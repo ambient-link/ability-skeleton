@@ -3,9 +3,8 @@
   "type": "project",
   "license": "MIT",
   "description": "A minimal ambient.link ability project recommended to create bare bones artificial intelligence",
-  "minimum-stability": "dev",
   "require": {
-    "php": ">=7.2.5",
+    "php": ">=7.0.8",
     "ext-ctype": "*",
     "ext-iconv": "*",
     "symfony/flex": "^1.3.1"
@@ -13,13 +12,13 @@
   "flex-require": {
     "symfony/console": "*",
     "symfony/dotenv": "*",
-    "symfony/framework-bundle": "*",
-    "symfony/yaml": "*"
+    "symfony/yaml": "*",
+    "ambient-link/ability-sdk": "1.0.0"
   },
   "require-dev": {
+    "roave/security-advisories": "dev-master"
   },
   "config": {
-    "optimize-autoloader": true,
     "preferred-install": {
       "*": "dist"
     },
@@ -39,8 +38,6 @@
     "paragonie/random_compat": "2.*",
     "symfony/polyfill-ctype": "*",
     "symfony/polyfill-iconv": "*",
-    "symfony/polyfill-php72": "*",
-    "symfony/polyfill-php71": "*",
     "symfony/polyfill-php70": "*",
     "symfony/polyfill-php56": "*"
   },
@@ -58,12 +55,9 @@
     "symfony/symfony": "*"
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "5.2-dev"
-    },
     "symfony": {
       "allow-contrib": false,
-      "require": "5.2.*"
+      "require": "3.4.*"
     }
   }
 }
